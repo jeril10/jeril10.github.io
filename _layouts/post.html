@@ -7,7 +7,7 @@ layout: compress
 {% include head.html %}
 <body id="posts" class="inner-post-page">
   
-    <div {% if page.light %} class="block-left light" {% else %} class="block-left" {% endif %}>
+    <div class="block-left {% if page.light %}light{% endif %}">
       <div class="content">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
         <div class="post-title-section">
@@ -20,7 +20,7 @@ layout: compress
               {% endunless %}
             {% endfor %}
           </ul>
-          <div class="section-line reverse"><!--a href="{{ site.url}}/posts">Back to home</a> <em>/</em--></div>
+          <div class="section-line reverse"><a href="{{ site.url}}">Go back</a> <em>/</em></div>
         </div>
       </div>
         <div id="switcher">
@@ -29,8 +29,8 @@ layout: compress
     </div>
 
     <div class="block-right">
-      <a href="/" title="posts" class="posts-menu-icon post-header"></a>
-      <!--a title="projects" class="projects-menu-icon"-->
+      <!-- a href="/" title="posts" class="posts-menu-icon post-header"></a>
+      <a title="projects" class="projects-menu-icon"-->
         <span></span>
       </a>
       <div class="inner-post content">
