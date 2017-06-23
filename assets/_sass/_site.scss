@@ -679,7 +679,7 @@ canvas {
   }
   a:not(.btn):not(.pagination_pager) {
     color: #399f62;
-    border-bottom: 1px dotted $green;
+    //border-bottom: 1px dotted $green;
   }
   ul,
   ol {
@@ -1028,7 +1028,7 @@ canvas {
 }
 
 #disqus_thread {
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
 }
 #disqus_thread:after {
@@ -1046,34 +1046,11 @@ canvas {
 .post-links {
   margin: 30px 0px 40px 0px;
 
-  .link-to-post {
-    width: 100%;
-    display: block;
-    margin: 10px auto;
-    padding: 1em;
-    text-decoration: none;
-    outline: none;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
-    text-align: center;
-    border: 1px solid #ddd !important;
-    transition: box-shadow 0.3s ease-in-out;
-    &:hover {
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
-    }
-
-    &__prev,
-    &__next {
-      font-size: 0.8em;
-      color: #333;
-      margin: 10px 0;
-    }
-
-    &__title {
-      font-size: 1em;
-      font-weight: bold;
-      color: #333;
-      margin-top: 10px;
-      display: block;
-    }
+  .read-next {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  li {
+    font-size: 20px;
   }
 }
