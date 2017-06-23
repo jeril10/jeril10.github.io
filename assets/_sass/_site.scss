@@ -716,7 +716,6 @@ canvas {
     font-size: 14px;
   }
   .section-line {
-    color: $green;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -746,6 +745,7 @@ canvas {
     em {
       display: inline-block;
       margin: 0 10px;
+      color: rgba($white, 0.4);
     }
     &.reverse {
       margin-top: 40px;
@@ -789,6 +789,9 @@ canvas {
     &.reverse {
       &:before {
         background: rgba(#222, 0.5);
+      }
+      em {
+        color: rgba(#222, 0.5);
       }
     }
   }
@@ -1028,7 +1031,7 @@ canvas {
 }
 
 #disqus_thread {
-  margin-top: 40px;
+  margin-top: 55px;
   position: relative;
 }
 #disqus_thread:after {
@@ -1049,6 +1052,7 @@ canvas {
   .read-next {
     font-size: 20px;
     font-weight: bolder;
+    margin-bottom: 20px;
   }
   li {
     font-size: 20px;
